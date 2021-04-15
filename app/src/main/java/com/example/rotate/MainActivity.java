@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
         button = (Button)findViewById(R.id.button);
         imageView = (ImageView)findViewById(R.id.ivSelfie);
+
+        touchListener = new TouchListener(this);
         imageView.setOnTouchListener(touchListener);
     }
 
